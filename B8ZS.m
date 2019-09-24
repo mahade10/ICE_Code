@@ -41,17 +41,3 @@ for i=1:length(time)
 end
 plot(time,y_value);
 axis([0 Time -4 4]);
-
-x=0;
-for i=1:length(time)
-  if(time(i)>x)
-    x=x+1;
-    if(y_value(i)==0)
-      ans(x)=0;
-    else
-      ans(x)=1;
-    end
-    end
-end
-bits
-ans
